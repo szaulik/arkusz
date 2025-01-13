@@ -1,0 +1,10 @@
+Algorytm NajdluższyWspolnyPodłańcuch(DNA1, DNA2, n)
+   1. max_len = 0  // Zmienna do przechowywania długości najdłuższego wspólnego podłańcucha
+   2. current_len = 0  // Zmienna do przechowywania bieżącej długości wspólnego podłańcucha
+   3. Dla i = 0 do n-1 wykonaj:
+      4. Jeśli DNA1[i] = DNA2[i] to
+         5. current_len += 1  // Zwiększamy długość bieżącego wspólnego podłańcucha
+         6. Jeśli current_len > max_len to max_len = current_len  // Jeśli nowy podłańcuch jest dłuższy, zapisz jego długość
+      7. W przeciwnym razie:
+         8. current_len = 0  // Resetujemy długość, ponieważ nie ma zgodności
+   9. Zwróć max_len

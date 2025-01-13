@@ -1,0 +1,19 @@
+Algorytm NajczestszyNukleotyd(DNA, n)
+   1. Utworzenie tablicy liczba[4] = {0, 0, 0, 0}   // Liczba dla A, C, G, T
+   2. Dla i = 0 do n-1 wykonaj
+      3. Jeśli DNA[i] = 'A' to liczba[0] += 1
+      4. Jeśli DNA[i] = 'C' to liczba[1] += 1
+      5. Jeśli DNA[i] = 'G' to liczba[2] += 1
+      6. Jeśli DNA[i] = 'T' to liczba[3] += 1
+
+   7. Największa_liczba = liczba[0]
+   8. Najczęstszy_nukleotyd = 'A'
+   
+   9. Dla i = 1 do 3 wykonaj
+      10. Jeśli liczba[i] > Największa_liczba to
+          11. Największa_liczba = liczba[i]
+          12. Jeśli i = 1 to Najczęstszy_nukleotyd = 'C'
+          13. Jeśli i = 2 to Najczęstszy_nukleotyd = 'G'
+          14. Jeśli i = 3 to Najczęstszy_nukleotyd = 'T'
+
+   15. Zwróć Najczęstszy_nukleotyd
